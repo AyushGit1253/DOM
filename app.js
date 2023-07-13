@@ -28,7 +28,7 @@ titleElements.forEach(function(element) {
 });
 */
 
- var item=document.getElementsByClassName('list-group-item');
+ /* var item=document.getElementsByClassName('list-group-item');
 console.log(item[2])
 item[2].textContent='HELLO' 
 
@@ -46,4 +46,23 @@ for(var i=0;i<li.length;i++){
   li[i].style.fontWeight='bold'
   li[i].style.background='green'
 }
+ 
+ */
+/* var title=document.querySelector('.list-group-item:last-child')
+title.style.color='red' */
+
+/* var second=document.querySelector('.list-group-item:nth-child(2)')
+second.style.backgroundColor='green'
+ */
+/* var third=document.querySelector('.list-group-item:nth-child(3)')
+third.style.display='none' */
+
+/* var all=document.querySelector('.list-group-item:nth-child(2)')
+all.style.color='green' */
+
+var item=document.querySelectorAll('.list-group-item:nth-child(odd)')
+for(var i=0;i<item.length;i++){
+  item[i].style.backgroundColor='green'
+}
+
 
