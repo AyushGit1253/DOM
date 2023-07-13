@@ -28,14 +28,14 @@ titleElements.forEach(function(element) {
 });
 */
 
-/* var item=document.getElementsByClassName('list-group-item');
-/* console.log(item[2])
-item[2].textContent='HELLO' */
+ var item=document.getElementsByClassName('list-group-item');
+console.log(item[2])
+item[2].textContent='HELLO' 
 
-/*for(var i=0;i<item.length;i++){
+for(var i=0;i<item.length;i++){
   item[i].style.fontWeight='bold'
 }
-item[2].style.backgroundColor='green' */
+item[2].style.backgroundColor='green' 
 
 var li=document.getElementsByTagName('li')
 console.log(li)
