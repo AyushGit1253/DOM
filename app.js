@@ -28,11 +28,22 @@ titleElements.forEach(function(element) {
 });
 */
 
-var item=document.getElementsByClassName('list-group-item');
+/* var item=document.getElementsByClassName('list-group-item');
 /* console.log(item[2])
 item[2].textContent='HELLO' */
 
-for(var i=0;i<item.length;i++){
+/*for(var i=0;i<item.length;i++){
   item[i].style.fontWeight='bold'
 }
-item[2].style.backgroundColor='green'
+item[2].style.backgroundColor='green' */
+
+var li=document.getElementsByTagName('li')
+console.log(li)
+console.log(li[2])
+li[2].style.fontWeight='bold'
+
+for(var i=0;i<li.length;i++){
+  li[i].style.fontWeight='bold'
+  li[i].style.background='green'
+}
+
