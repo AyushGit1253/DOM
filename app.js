@@ -60,9 +60,47 @@ third.style.display='none' */
 /* var all=document.querySelector('.list-group-item:nth-child(2)')
 all.style.color='green' */
 
-var item=document.querySelectorAll('.list-group-item:nth-child(odd)')
+/* var item=document.querySelectorAll('.list-group-item:nth-child(odd)')
 for(var i=0;i<item.length;i++){
   item[i].style.backgroundColor='green'
 }
+ */
 
+//creating nodes and modifying dom
 
+//parentnode
+var items=document.querySelector('#items')
+console.log(items.parentNode)
+
+//parentnodelement
+console.log(items.parentElement)
+items.parentElement.style.backgroundColor='#f4f4f4'
+
+//children
+
+console.log(items.children)
+console.log(items.children[1].style.backgroundColor='green')
+
+//firstchildelement
+console.log(items.firstChild)
+items.firstElementChild.textContent='hello'
+items.lastElementChild.textContent='hello'
+
+console.log(items.previousElementSibling)
+items.previousElementSibling.style.backgroundColor='green'
+
+//create new div
+
+var div=document.createElement('div')
+console.log(div)
+div.className='divclass'
+div.title='title'
+
+var textDiv=document.createTextNode('hello world')
+div.appendChild(textDiv)
+
+var container=document.querySelector('header .container')
+var h1=document.querySelector('header h1')
+
+container.insertBefore(div,h1)
+div.style.fontSize='30px'
