@@ -14,7 +14,7 @@ console.log(document.getElementById('header-title').textContent='HELLO')
 var headerTitle=document.getElementById('header-title')
 headerTitle.textContent='HELLO'
 headerTitle.innerText='123'
-headerTitle.innerHTML='<h3>hi</h3>' */
+headerTitle.innerHTML='<h3>hi</h3>' 
 
 var header=document.getElementById('main-header')
 header.style.borderBlock='solid 3px #000'
@@ -26,3 +26,13 @@ titleElements.forEach(function(element) {
   element.style.fontWeight = "bold";
   element.style.color = "green";
 });
+*/
+
+var item=document.getElementsByClassName('list-group-item');
+/* console.log(item[2])
+item[2].textContent='HELLO' */
+
+for(var i=0;i<item.length;i++){
+  item[i].style.fontWeight='bold'
+}
+item[2].style.backgroundColor='green'
